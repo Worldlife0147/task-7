@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html>
- <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Mood Dashboard</title>
+    <style>
+        body{
+            margin: 20vh auto;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
 
-    <input type="text"
-    name="fullname"
-    placeholder="Please, Enter Your Name"
-    required>
+    }
 
-    
+    #moodBox {
+        border: 2px solid black;
+        padding: 10px;
+       
+    }
 
-    <script src="script.js"></script>
-     </body>
+    </style>
+</head>
+<body>
+
+    <div id="inputcontainer">
+        <input type="text"
+        name="fullname"
+        placeholder="Please, Enter Your Name!"id="nameInput" required/>
+    </div>
+
+    <div id="moodBox">
+        <p>Hi there, <span id="nameOutput"></span></p>
+
+        <button>Grow</button> <button>Shrink</button>
+    </div>
+
+    <div id="SecretMessage">
+        <button>Show Secret message</button>
+    </div>
+
+   <script src="script.js"></script>
+</body>
 </html>

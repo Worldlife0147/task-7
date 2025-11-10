@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Mood Dashboard</title>
+    <style>
+        body{
+            margin: 20vh auto;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+
+    }
+
+    body.day {
+        background-color: white;
+        color: black;
+
+    }
+
+    body.night {
+        background-color: black;
+        color: white;
+    }
+    #moodBox {
+        border: 2px solid black;
+        height: 150px;
+        width: 200px;
+        text-align: center;
+       
+    }
+
+    #secretMessage {
+        display: none;
+
+    }
+
+    </style>
+</head>
+<body class="day">
+
+    <div id="class">
+        <button id="ToggleDarkMode">Day/Night</button>
+
+    </div>
+
+    <div id="inputcontainer">
+        <input type="text"
+        name="fullname"
+        placeholder="Please, Enter Your Name!"id="nameInput" required/>
+    </div>
+
+    <div id="moodBox">
+        <p>Hi there, <span id="nameOutput"></span></p>
+
+       <div id="bottonContainer"> 
+        <button onclick="changeSize(20)">Grow</button >
+        <button onclick="changeSize(-20)">Shrink</button>
+       </div>
+    </div>
+
+    <div id="messageContainer">
+        <p id="secretMessage">John 3:16</p>
+        <button onclick="toggleSecret()">Secret message</button>
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>

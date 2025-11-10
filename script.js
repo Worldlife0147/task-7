@@ -8,9 +8,9 @@ ToggleDarkMode.addEventListener('click', () => {
 
             // Update button text
             if (body.classList.contains('night')) {
-                ToggleDarkMode.textContent = 'Switch to Day Mode';
+                ToggleDarkMode.textContent = '☀';
             } else {
-                ToggleDarkMode.textContent = 'Switch to Night Mode';
+                ToggleDarkMode.textContent = '🌙';
             }
         });
 
